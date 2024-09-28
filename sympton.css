@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a8a4a4;
+}
+
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #f8fbfd;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Navigation Menu Styling */
+.navbar {
+    background-color: #f0f8ff; /* Lighter navbar background color */
+    position: relative; /* Needed for absolute positioning of the underline */
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+/* Underline Effect */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 2px;
+    width: 100%;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effects for Navbar */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Section Styling */
+section.section {
+    padding: 2rem 0;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+/* Section Heading */
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Container for Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.card {
+    border: none; /* Remove border */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Increase title font size */
+}
+
+.card-text {
+    color: #666; /* Slightly darker text color for readability */
+}
+
+.circular-image {
+    width: 180px; /* Adjust size as needed */
+    height: 180px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #6ba1f9;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    margin: 0 10px;
+}

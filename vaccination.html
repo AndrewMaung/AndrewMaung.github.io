@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Tracker</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vaccination.css">
+    
+    <!-- External JavaScript -->
+    <script src="vaccination.js" defer></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for the icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #6ba1f9;">
+    <div class="container">
+        <a class="navbar-brand text-white" href="index.html">COVID-19 Tracker & Awareness</a>
+        <!-- Toggler for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:white;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html#dashboard">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="index.html#guidelines">Health Guidelines</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="index.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="vaccination.html">Vaccination Tracker</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="resources.html">Resources</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sympton.html">Symptom Checker</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero_content">
+            <h1>Vaccination Saves Lives<br>Join the Fight Against COVID-19</h1>
+            <div class="explore">
+                <p>Take a step towards a <strong>safer tomorrow.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="vaccination" class="section">
+            <div class="container">
+                <h2>Vaccination Tracker</h2>
+                
+                <!-- Vaccination Stats -->
+                <div class="vaccination-stats">
+                    <div class="stat-card">
+                        <h3>Total Vaccinations Administered</h3>
+                        <p id="total-vaccinations">12,345,678</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Vaccination Rate</h3>
+                        <p id="vaccination-rate">67% of the population</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Available Vaccines</h3>
+                        <p id="available-vaccines">Pfizer, Moderna, Johnson & Johnson</p>
+                    </div>
+                </div>
+                
+                <!-- Vaccine Availability Map -->
+                <div class="availability-map">
+                    <h3>Vaccine Availability Map</h3>
+                    <div id="map" class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.6311918863485!2d70.79462937605156!3d22.367550490453038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c972761ce515%3A0x3651e3fe1e9df4f8!2sMarwadi%20University!5e0!3m2!1sen!2sin!4v1727471526789!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Vaccine Information -->
+                <div class="vaccine-info">
+                    <h3>Vaccine Information</h3>
+                    <ul>
+                        <li><strong>Pfizer:</strong> 95% effective, available for ages 12 and up.</li>
+                        <li><strong>Moderna:</strong> 94% effective, available for ages 18 and up.</li>
+                        <li><strong>Johnson & Johnson:</strong> 66% effective, one-dose vaccine.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-5" style="background-color: #6ba1f9; color: white; padding: 20px;">
+        <div class="container">
+            <p>&copy; 2024 COVID-19 Tracker. All rights reserved.</p>
+            <p>
+                <a href="#terms" class="text-white">Terms of Service</a> | 
+                <a href="#privacy" class="text-white">Privacy Policy</a>
+            </p>
+            <div class="social-media">
+                <a href="https://facebook.com" class="text-white" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

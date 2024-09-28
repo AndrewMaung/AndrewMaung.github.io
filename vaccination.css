@@ -1,0 +1,255 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #f8fbfd;
+}
+
+.navbar {
+    background-color: #6ba1f9;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 2px;
+    width: 100%;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Sections and Containers */
+section.section {
+    padding: 2rem 0;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Vaccination Stats */
+.vaccination-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    color: #007bff;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Vaccine Availability Map */
+.availability-map {
+    margin: 2rem 0;
+}
+
+#map {
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Vaccine Information */
+.vaccine-info {
+    margin: 2rem 0;
+}
+
+.vaccine-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vaccine-info li {
+    background-color: #e9ecef;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Appointment Booking */
+.appointment-booking {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.appointment-booking .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.appointment-booking .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #6ba1f9;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('./img/vaccine-people.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero_content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.explore {
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    margin: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    border: none;
+    background-color: #f79477;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 1090px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero_content {
+        background-color: #ffedde;
+        width: 400px;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Map Styling */
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
